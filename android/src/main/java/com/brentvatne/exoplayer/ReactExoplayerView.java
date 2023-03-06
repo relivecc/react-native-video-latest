@@ -169,7 +169,6 @@ class ReactExoplayerView extends FrameLayout implements
     private int minLoadRetryCount = 3;
     private int maxBitRate = 0;
     private long seekTime = C.TIME_UNSET;
-    private int codecRetries = 0;
 
     private boolean hasDrmFailed = false;
     private boolean isUsingContentResolution = false;
