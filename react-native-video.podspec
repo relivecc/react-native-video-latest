@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
 
   s.dependency "React-Core"
 
-  s.default_subspec = "Video"
+#   s.default_subspec = "Video"
 
   s.static_framework = true
 
