@@ -15,21 +15,25 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "9.0"
   s.tvos.deployment_target = "9.0"
 
-  s.subspec "Video" do |ss|
-    ss.source_files  = "ios/Video/**/*.{h,m,swift}"
-    ss.dependency "PromisesSwift"
+  s.dependency "SPTPersistentCache", "~> 1.1.0"
+  s.dependency "DVAssetLoaderDelegate", "~> 0.3.1"
+  s.source_files = "ios/**/*.{h,m,swift}"
 
-    ss.ios.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.18.1'
-    ss.tvos.dependency 'GoogleAds-IMA-tvOS-SDK', '~> 4.2'
-  end
-
-  s.subspec "VideoCaching" do |ss|
-    ss.dependency "react-native-video/Video"
-    ss.dependency "SPTPersistentCache", "~> 1.1.0"
-    ss.dependency "DVAssetLoaderDelegate", "~> 0.3.1"
-
-    ss.source_files = "ios/VideoCaching/**/*.{h,m,swift}"
-  end
+#   s.subspec "Video" do |ss|
+#     ss.source_files  = "ios/Video/**/*.{h,m,swift}"
+#     ss.dependency "PromisesSwift"
+#
+#     ss.ios.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.18.1'
+#     ss.tvos.dependency 'GoogleAds-IMA-tvOS-SDK', '~> 4.2'
+#   end
+#
+#   s.subspec "VideoCaching" do |ss|
+#     ss.dependency "react-native-video/Video"
+#     ss.dependency "SPTPersistentCache", "~> 1.1.0"
+#     ss.dependency "DVAssetLoaderDelegate", "~> 0.3.1"
+#
+#     ss.source_files = "ios/VideoCaching/**/*.{h,m,swift}"
+#   end
 
   s.dependency "React-Core"
 
