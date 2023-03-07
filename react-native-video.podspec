@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.dependency "SPTPersistentCache", "~> 1.1.0"
   s.dependency "DVAssetLoaderDelegate", "~> 0.3.1"
   s.source_files = "ios/**/*.{h,m,swift}"
+  s.ios.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.18.1'
+  s.tvos.dependency 'GoogleAds-IMA-tvOS-SDK', '~> 4.2
 
 #   s.subspec "Video" do |ss|
 #     ss.source_files  = "ios/Video/**/*.{h,m,swift}"
