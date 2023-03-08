@@ -72,7 +72,9 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
     private var _resouceLoaderDelegate: RCTResourceLoaderDelegate?
     private var _playerObserver: RCTPlayerObserver = RCTPlayerObserver()
 
+#if canImport(RCTVideoCache)
     private let _videoCache:RCTVideoCachingHandler = RCTVideoCachingHandler()
+#endif
 
 #if TARGET_OS_IOS
     private let _pip:RCTPictureInPicture = RCTPictureInPicture(self.onPictureInPictureStatusChanged, self.onRestoreUserInterfaceForPictureInPictureStop)
@@ -138,7 +140,9 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
             object: nil
         )
         _playerObserver._handlers = self
+#if canImport(RCTVideoCache)
         _videoCache.playerItemPrepareText = playerItemPrepareText
+#endif
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -264,9 +268,11 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
                         throw NSError(domain: "", code: 0, userInfo: nil)
                     }
 
+    #if canImport(RCTVideoCache)
                     if self._videoCache.shouldCache(source:source, textTracks:self._textTracks) {
                         return self._videoCache.playerItemForSourceUsingCache(uri: source.uri, assetOptions:assetOptions)
                     }
+    #endif
 
                     if self._drm != nil || self._localSourceEncryptionKeyScheme != nil {
                         self._resouceLoaderDelegate = RCTResourceLoaderDelegate(
