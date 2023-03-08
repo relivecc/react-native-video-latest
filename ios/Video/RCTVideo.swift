@@ -141,7 +141,20 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
         )
         _playerObserver._handlers = self
 #if canImport(RCTVideoCache)
+        print("MPAMPIS CAN IMPORT RCTVideoCache");
         _videoCache.playerItemPrepareText = playerItemPrepareText
+#else
+        print("MPAMPIS CANT IMPORT RCTVideoCache")
+#endif
+#if canImport(RCTSwiftLog)
+        print("MPAMPIS CAN IMPORT RCTSwiftLog");
+#else
+        print("MPAMPIS CANT IMPORT RCTSwiftLogT")
+#endif
+#if canImport(RCTVideoSwiftLog)
+        print("MPAMPIS CAN IMPORT RCTVideoSwiftLog");
+#else
+        print("MPAMPIS CANT IMPORT RCTVideoSwiftLog")
 #endif
     }
 

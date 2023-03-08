@@ -48,6 +48,9 @@
 		0177D39727170A7A00F5BE18 /* RCTVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTVideoManager.m; path = Video/RCTVideoManager.m; sourceTree = "<group>"; };
 		0177D39827170A7A00F5BE18 /* RCTVideo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RCTVideo-Bridging-Header.h"; path = "Video/RCTVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0177D39927170A7A00F5BE18 /* RCTVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RCTVideo.swift; path = Video/RCTVideo.swift; sourceTree = "<group>"; };
+		09BED69829B8BB0F0006A9AD /* RCTVideoCachingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RCTVideoCachingHandler.swift; path = VideoCaching/RCTVideoCachingHandler.swift; sourceTree = "<group>"; };
+		09BED69929B8BB0F0006A9AD /* RCTVideoCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTVideoCache.m; path = VideoCaching/RCTVideoCache.m; sourceTree = "<group>"; };
+		09BED69A29B8BB0F0006A9AD /* RCTVideoCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTVideoCache.h; path = VideoCaching/RCTVideoCache.h; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTVideo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +90,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				09BED69A29B8BB0F0006A9AD /* RCTVideoCache.h */,
+				09BED69929B8BB0F0006A9AD /* RCTVideoCache.m */,
+				09BED69829B8BB0F0006A9AD /* RCTVideoCachingHandler.swift */,
 				01489050272001A100E69940 /* DataStructures */,
 				01489051272001A100E69940 /* Features */,
 				0177D39527170A7A00F5BE18 /* RCTSwiftLog */,
@@ -237,10 +243,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-                    "../../../ios/Pods/SPTPersistentCache/**",
-                    "../../../ios/Pods/DVAssetLoaderDelegate/**",
-                );
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,10 +277,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-                    "../../../ios/Pods/SPTPersistentCache/**",
-                	"../../../ios/Pods/DVAssetLoaderDelegate/**",
-                );
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -292,8 +290,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../ios/Pods/DVAssetLoaderDelegate/**",
-                    "$(SRCROOT)/../../../ios/Pods/SPTPersistentCache/**",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -313,8 +309,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../../ios/Pods/DVAssetLoaderDelegate/**",
-                    "$(SRCROOT)/../../../ios/Pods/SPTPersistentCache/**",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
