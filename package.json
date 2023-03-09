@@ -34,7 +34,7 @@
         "DRMType.js",
         "TextTrackType.js",
         "VideoResizeMode.js",
-        "react-native-video.podspec",
+        "react-native-video-latest.podspec",
         "docs"
     ]
 }
