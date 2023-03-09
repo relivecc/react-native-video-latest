@@ -1,4 +1,4 @@
-package com.brentvatne.react;
+package com.brentvatne.react2;
 
 import android.annotation.SuppressLint;
 import android.media.MediaCodecList;

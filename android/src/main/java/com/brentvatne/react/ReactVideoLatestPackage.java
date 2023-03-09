@@ -1,4 +1,4 @@
-package com.brentvatne.react;
+package com.brentvatne.react2;
 
 import com.brentvatne.exoplayer.DefaultReactExoplayerConfig;
 import com.brentvatne.exoplayer.ReactExoplayerConfig;
@@ -12,14 +12,14 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.Collections;
 import java.util.List;
 
-public class ReactVideoPackage implements ReactPackage {
+public class ReactVideoLatestPackage implements ReactPackage {
 
     private ReactExoplayerConfig config;
 
-    public ReactVideoPackage() {
+    public ReactVideoLatestPackage() {
     }
 
-    public ReactVideoPackage(ReactExoplayerConfig config) {
+    public ReactVideoLatestPackage(ReactExoplayerConfig config) {
         this.config = config;
     }
 
