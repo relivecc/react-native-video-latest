@@ -1,4 +1,4 @@
-package com.brentvatne.exoplayer;
+package com.brentvatne.exoplayer2;
 
 import static com.google.android.exoplayer2.C.CONTENT_TYPE_DASH;
 import static com.google.android.exoplayer2.C.CONTENT_TYPE_HLS;
@@ -25,11 +25,11 @@ import android.widget.ImageButton;
 import androidx.annotation.WorkerThread;
 import androidx.activity.OnBackPressedCallback;
 
-import com.brentvatne.common.Track;
-import com.brentvatne.common.VideoTrack;
+import com.brentvatne.common2.Track;
+import com.brentvatne.common2.VideoTrack;
 import com.brentvatne.react.R;
-import com.brentvatne.receiver.AudioBecomingNoisyReceiver;
-import com.brentvatne.receiver.BecomingNoisyListener;
+import com.brentvatne.receiver2.AudioBecomingNoisyReceiver;
+import com.brentvatne.receiver2.BecomingNoisyListener;
 import com.facebook.react.bridge.Dynamic;
 import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReadableArray;

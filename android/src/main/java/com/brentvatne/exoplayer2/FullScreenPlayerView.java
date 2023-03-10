@@ -1,4 +1,4 @@
-package com.brentvatne.exoplayer;
+package com.brentvatne.exoplayer2;
 
 import android.app.Dialog;
 import android.content.Context;

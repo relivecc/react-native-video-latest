@@ -1,10 +1,10 @@
-package com.brentvatne.exoplayer;
+package com.brentvatne.exoplayer2;
 
 import androidx.annotation.StringDef;
 import android.view.View;
 
-import com.brentvatne.common.Track;
-import com.brentvatne.common.VideoTrack;
+import com.brentvatne.common2.Track;
+import com.brentvatne.common2.VideoTrack;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableArray;
