@@ -27,7 +27,7 @@ import androidx.activity.OnBackPressedCallback;
 
 import com.brentvatne.common2.Track;
 import com.brentvatne.common2.VideoTrack;
-import com.brentvatne.react.R;
+import com.brentvatne.react2.R;
 import com.brentvatne.receiver2.AudioBecomingNoisyReceiver;
 import com.brentvatne.receiver2.BecomingNoisyListener;
 import com.facebook.react.bridge.Dynamic;
